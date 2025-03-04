@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="head-foot.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="order.js" defer></script>
+</head>
+<body>
+    <div id = "wrapper">
+        <div id="logonav">
+            <header>
+                <div id="logo">
+                    <a href="#">
+                        <div id="logo">
+                            <img src="Logo.png">
+                            <span id="logo-text">Vitaly Tea</span>
+                        </div>
+                    </a>
+                </div>
+            </header>
+            
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#" style="color: #cdb773;">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="hamburger" aria-label="Toggle Navigation">
+                &#9776;
+            </button>
+
+        </div>
+    <div class="container">
+        <div class="order">
+            <h1>Order Form</h1>
+            <h6>Check all that apply.</h6>
+            <div class="row">
+                <div class="services">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="form" value="Digital Printing" id="digital-printing">
+                            <label for="digital-printing">Digital Printing</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="form" value="Binding" id="binding">
+                            <label for="binding">Binding</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="form" value="Laminating" id="laminating">
+                            <label for="laminating">Laminating</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="form" value="Cutting" id="cutting">
+                            <label for="cutting">Cutting</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="form" value="Cold Drinks" id="cold-drinks">
+                            <label for="cold-drinks">Cold Drinks</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="form" value="Hot Drinks" id="hot-drinks">
+                            <label for="hot-drinks">Hot Drinks</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="form" value="Sandwiches" id="sandwiches">
+                            <label for="sandwiches">Sandwiches</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit" id="order">ORDER</button>
+        </div>
+        <div class="OrderForm" id="OrderForm">
+            <div class="digital-printing" id="digital-printing-section">
+                <h2>Digital Printing</h2>
+                <h5>Price: 100</h5>
+                <div class="dp-row">
+                    <div class="dp1">
+                        <h3>Paper</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" name="paper" value="Glossy" id="Glossy">
+                                <label for="Glossy">Glossy <b> +Php10</b></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="paper" value="Matte" id="Matte">
+                                <label for="Matte">Matte <b> +Php20</b></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="paper" value="Textured" id="Textured">
+                                <label for="Textured">Textured <b> +Php30</b> </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dp2">
+                        <h3>Ink</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" name="ink" value="HP" id="HP">
+                                <label for="HP">HP <b> +Php2</b> </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="ink" value="Epson" id="Epson">
+                                <label for="Epson">Epson <b> +Php5</b> </label>
+                                
+                            </li>
+                            <li>
+                                <input type="radio" name="ink" value="Canon" id="Canon">
+                                <label for="Canon">Canon <b> +Php7</b> </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dp-row">
+                    <div class="dp3">
+                        <h3>Number of Copies</h3>
+                        <input type="number" name="DigitalPrintingCopies" id="DigitalPrintingCopies" placeholder="Quantity">
+                    </div>
+                    <div class="dp4">
+                        <h3>File</h3>
+                        <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                    </div>
+                </div>
+            </div>
+            <div class="binding" id="binding-section">
+                <h2>Binding</h2>
+                <h5>Price: 50</h5>
+                <div class="dp-row">
+                    <div class="dp1">
+                        <h3>Binding Type</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" name="binding-type" value="Wire" id="Wire">
+                                <label for="Wire">Wire <b> +Php20</b></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="binding-type" value="Saddle Stitch" id="SaddleStitch">
+                                <label for="Saddle Stitch">Saddle Stitch <b> +Php40</b></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="binding-type" value="Heated Spine" id="HeatedSpine">
+                                <label for="Heated Spine">Heated Spine <b> +Php50</b></b></label>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="dp-row">
+                    <div class="dp3">
+                        <h3>Number of Copies</h3>
+                        <input type="number" name="BindingCopies" id="BindingCopies" placeholder="Quantity">
+                    </div>
+                    <div class="dp4">
+                        <h3>File</h3>
+                        <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                    </div>
+                </div>
+            </div>
+            <div class="laminating" id="laminating-section">
+                <h2>Laminating</h2>
+                <h5>Price: 30</h5>
+                <div class="dp-row">
+                    <div class="dp3">
+                        <h3>Number of Copies</h3>
+                        <input type="number" name="LaminatingCopies" id="LaminatingCopies" placeholder="Quantity">
+                    </div>
+                    <div class="dp4">
+                        <h3>File</h3>
+                        <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                    </div>
+                </div>
+            </div>
+            <div class="cutting" id="cutting-section">
+                <h2>Cutting</h2>
+                <h5>Price: 50</h5>
+                <div class="dp-row">
+                    <div class="dp3">
+                        <h3>Number of Copies</h3>
+                        <input type="number" name="CuttingCopies" id="CuttingCopies" placeholder="Quantity">
+                    </div>
+                    <div class="dp4">
+                        <h3>File</h3>
+                        <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                    </div>
+                </div>
+            </div>
+            <div class="cold-drinks" id="cold-drinks-section">
+                <h2>Cold Drinks</h2>
+            <div class="food-items">
+                <div class="item">
+                    <img src="menu_img/saltedcaramel.jpg">
+                    <p>ICED SALTED CARAMEL LATTE</p>
+                    <h4>Price: 150</h4>
+                    <input type="number" name="ISCL" id="ISCL" placeholder="Quantity">
+                </div>
+                <div class="item">
+                    <img src="menu_img/choconut.jpg">
+                    <p>CHOCO HAZELNUT FRAPPE</p>
+                    <h4>Price: 150</h4>
+                    <input type="number" id="CHF" id="CHF" placeholder="Quantity">
+                </div>
+                <div class="item">
+                    <img src="menu_img/caramelmachi.jpg">
+                    <p>ICED CARAMEL MACCHIATO</p>
+                    <h4>Price: 120</h4>
+                    <input type="number" name="ICM"  id="ICM" placeholder="Quantity">
+                </div>
+                <div class="item">
+                    <img src="menu_img/matchatte.jpg">
+                    <p>ICED MATCHA LATTE</p>
+                    <h4>Price: 120</h4>
+                    <input type="number" name="IML" id="IML" placeholder="Quantity">
+                </div>
+                <div class="item">
+                    <img src="menu_img/milosaur.jpg">
+                    <p>MILO DINOSAUR</p>
+                    <h4>Price: 100</h4>
+                    <input type="number" name="MD" id="MD" placeholder="Quantity">
+                </div>
+                <div class="item">
+                    <img src="menu_img/strawberry lemonade.jfif">
+                    <p>STRAWBERRY LEMONADE</p>
+                    <h4>Price: 90</h4>
+                    <input type="number" name="SL" id="SL" placeholder="Quantity">
+                </div>
+                <div class="item">
+                    <img src="menu_img/bluegoon.jpg">
+                    <p>BLUE LEMONADE</p>
+                    <h4>Price: 90</h4>
+                    <input type="number" name="BL" id="BL" placeholder="Quantity">
+                </div>
+                
+            </div>
+            </div>
+            <div class="hot-drinks" id="hot-drinks-section">
+                <h2>Hot Drinks</h2>
+                <div class="food-items">
+                    <div class="item">
+                        <img src="menu_img/special.jpg">
+                        <p>VITALY TEA SPECIAL</p>
+                        <h4>Price: 120</h4>
+                        <input type="number" name="VTS" id="VTS" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/spanishlat.jpeg">
+                        <p>SPANISH LATTE</p>
+                        <h4>Price: 120</h4>
+                        <input type="number" name="SL" id="SL" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/cinammon.jpg">
+                        <p>CINNAMON HOT CHOCOLATE</p>
+                        <h4>Price: 120</h4>
+                        <input type="number" name="CHC" id="CHC" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/hotchoco.jpg">
+                        <p>CLASSIC HOT CHOCOLATE</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="CHCC" id="CHCC" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/vanillamond.jpg">
+                        <p>VANILLA ALMOND LATTE</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="VAL" id="VAL" placeholder="Quantity">
+                    </div>
+                </div>
+            </div>
+            <div class="sandwiches" id="sandwiches-section">
+                <h2>Sandwiches</h2>
+                    <div class="food-items">
+                    <div class="item">
+                        <img src="menu_img/chickenpesto.jpg">
+                        <p>CHICKEN PESTO PANINI</p>
+                        <h4>Price: 120</h4>
+                        <input type="number" name="CPP" id="CPP" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/roastbeef.jpg">
+                        <p>ROAST BEEF SANDWICH</p>
+                        <h4>Price: 120</h4>
+                        <input type="number" name="RBS" id="RBS" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/turkeycado.jfif">
+                        <p>TURKEY AVOCADO SANDWICH</p>
+                        <h4>Price: 120</h4>
+                        <input type="number" name="TVS" id="TVS" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/chickwich.jpg">
+                        <p>CHICKEN SANDWICH</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="CS" id="CS" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/grilledcheese.jpg">
+                        <p>GRILLED CHEESE</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="/GC" id="GC" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/clubwich.jpeg">
+                        <p>CLUB SANDWICH</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="CSW" id="CSW" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/blt.jpeg">
+                        <p>BLT SANDWICH</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="BS"  id="BS" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/tunamelt.jfif">
+                        <p>TUNA MELT SANDWICH</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="TMS" id="TMS" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/breakfast.jpg">
+                        <p>BREAKFAST SANDWICH</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="BSW" id="BSW" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="menu_img/hamdandcheese.jpg">
+                        <p>HAM & CHEESE SANDWICH</p>
+                        <h4>Price: 100</h4>
+                        <input type="number" name="HCS" id="HCS"" placeholder="Quantity">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="checkout" id="checkoutb">
+            <button type="submit" id="checkouts">Checkout</button>
+        </div>
+
+        <footer>
+            <div class="fcontainer">
+                <div class="fheader">
+                    <img src="Logo.png" alt="Logo">
+                    <h3>Vitaly Tea</h3>
+                </div>
+                <div class="f1">
+                    <div class="left">
+                        <h3>Give us feedback</h3>
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Your Name (Optional)">
+                            <textarea name="message" placeholder="Your Feedback" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="center">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Order</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="#"><img src="/pictures/facebook.png" alt="Facebook"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/pictures/instagram.png" alt="Instagram"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/pictures/tiktok.png" alt="Tiktok"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/pictures/location.png" alt="Location"></a><a href="">FEUTECH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
